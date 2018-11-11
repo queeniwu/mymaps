@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="https://fonts.googleapis.com/css?family=Heebo:700,400" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+<div class="notes">
+<h1>Notion Google Map Integration</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(42.350522, -71.107908),
+    zoom:16,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz0uHamX0zWcPV4ORVNrdFLf2A-EAz144&callback=myMap"></script>
+<h2> Directions </h2>
+<br>
+
+
+<img src="https://maps.googleapis.com/maps/api/staticmap?center=University+of+Waterloo,Waterloo,ON&zoom=16&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C    43.47063, -80.54346&markers=color:green%7Clabel:G%7C    43.47191, -80.54529
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284
+&key=AIzaSyBz0uHamX0zWcPV4ORVNrdFLf2A-EAz144">
+
+
+</div>
+
+</body>
+</html>
